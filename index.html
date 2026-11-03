@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borcelle Bakery</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2e9;
+            font-family: Arial, sans-serif;
+        }
+
+        .tarjeta {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            min-height: 500px;
+            margin: auto;
+            background-color: #f5f5ed;
+        }
+
+        .imagen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+        }
+
+        .imagen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contenido {
+            position: relative;
+            margin-left: 50%;
+            width: 50%;
+            min-height: 500px;
+            padding: 35px;
+        }
+
+        .marca {
+            margin: 0;
+            font-size: 16px;
+            color: #496b43;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            margin-top: 45px;
+            margin-bottom: 20px;
+            color: #496b43;
+            font-size: 38px;
+            line-height: 1.1;
+        }
+
+        .descripcion {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #333333;
+        }
+
+        .precio {
+            margin-top: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #496b43;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 70px;
+            padding: 12px 25px;
+            background-color: #496b43;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Adaptación para pantallas estrechas */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .tarjeta {
+                min-height: 0;
+            }
+
+            .imagen {
+                position: relative;
+                width: 100%;
+                height: 300px;
+            }
+
+            .contenido {
+                margin-left: 0;
+                width: 100%;
+                min-height: 0;
+                padding: 25px;
+            }
+
+            h1 {
+                margin-top: 25px;
+                font-size: 32px;
+            }
+
+            .boton {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tarjeta">
+
+        <div class="imagen">
+            <img src="comida.jpg" alt="Ensalada saludable">
+        </div>
+
+        <div class="contenido">
+            <p class="marca">BORCELLE BAKERY</p>
+
+            <h1>FUEL YOUR<br>BODY RIGHT</h1>
+
+            <p class="descripcion">
+                Fresh ingredients, delicious flavors and
+                healthy meals made for your everyday life.
+            </p>
+
+            <p class="precio">€12.50</p>
+
+            <a href="#" class="boton">ORDER NOW</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
